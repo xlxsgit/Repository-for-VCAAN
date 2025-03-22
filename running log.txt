@@ -1,0 +1,994 @@
+C:\Users\lxx\anaconda3\envs\pp\python.exe C:\Users\lxx\Documents\Codes\PYTHONs\VCAAN\VCAAN.py
+C:\Users\lxx\anaconda3\envs\pp\Lib\site-packages\pypots\nn\modules\reformer\local_attention.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+C:\Users\lxx\anaconda3\envs\pp\Lib\site-packages\pypots\nn\modules\reformer\local_attention.py:98: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+████████╗██╗███╗   ███╗███████╗    ███████╗███████╗██████╗ ██╗███████╗███████╗    █████╗ ██╗
+╚══██╔══╝██║████╗ ████║██╔════╝    ██╔════╝██╔════╝██╔══██╗██║██╔════╝██╔════╝   ██╔══██╗██║
+   ██║   ██║██╔████╔██║█████╗█████╗███████╗█████╗  ██████╔╝██║█████╗  ███████╗   ███████║██║
+   ██║   ██║██║╚██╔╝██║██╔══╝╚════╝╚════██║██╔══╝  ██╔══██╗██║██╔══╝  ╚════██║   ██╔══██║██║
+   ██║   ██║██║ ╚═╝ ██║███████╗    ███████║███████╗██║  ██║██║███████╗███████║██╗██║  ██║██║
+   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝    ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═╝╚═╝
+ai4ts v0.0.3 - building AI for unified time-series analysis, https://time-series.ai
+
+Using device: NVIDIA GeForce RTX 3050 Laptop GPU
+Number of sites: 12
+Type1 Rate1	 True missing rate of data: 0.1028
+2025-03-22 14:52:16 [INFO]: No given device, using default device: cuda
+mice: 0.1142,
+knn: 0.0876,
+locf: 0.1981,
+grud: 0.1979,
+usgan: 0.1664,
+saits: 0.1776,
+itransformer: 0.1764
+Type1 Rate1 MICE CONS:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 MICE CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.61s/it]
+Type1 Rate1 MICE VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 MICE VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.63s/it]
+RAW: 0.1142
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0682, VCAAN: 0.0581
+
+Type1 Rate1 KNN CONS:  30%|███       | 3/10 [00:05<00:13,  1.89s/it]
+Type1 Rate1 KNN CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.60s/it]
+Type1 Rate1 KNN VARY:  30%|███       | 3/10 [00:05<00:13,  1.90s/it]
+Type1 Rate1 KNN VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.64s/it]
+RAW: 0.0876
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0681, VCAAN: 0.0581
+
+Type1 Rate1 LOCF CONS:  30%|███       | 3/10 [00:05<00:13,  1.89s/it]
+Type1 Rate1 LOCF CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.63s/it]
+Type1 Rate1 LOCF VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 LOCF VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.60s/it]
+RAW: 0.1981
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0680, VCAAN: 0.0581
+
+Type1 Rate1 GRUD CONS:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 GRUD CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.61s/it]
+Type1 Rate1 GRUD VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 GRUD VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.65s/it]
+Type1 Rate1 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1979
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0682, VCAAN: 0.0581
+
+Type1 Rate1 USGAN CONS:  30%|███       | 3/10 [00:05<00:13,  1.90s/it]
+Type1 Rate1 USGAN CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.62s/it]
+Type1 Rate1 USGAN VARY:  30%|███       | 3/10 [00:05<00:13,  1.90s/it]
+Type1 Rate1 USGAN VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.66s/it]
+Type1 Rate1 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1664
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0682, VCAAN: 0.0581
+
+Type1 Rate1 SAITS CONS:  30%|███       | 3/10 [00:05<00:13,  1.89s/it]
+Type1 Rate1 SAITS CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.62s/it]
+Type1 Rate1 SAITS VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 SAITS VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.60s/it]
+Type1 Rate1 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1776
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0683, VCAAN: 0.0581
+
+Type1 Rate1 iTransformer CONS:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type1 Rate1 iTransformer CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.58s/it]
+Type1 Rate1 iTransformer VARY:  30%|███       | 3/10 [00:05<00:13,  1.94s/it]
+Type1 Rate1 iTransformer VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.62s/it]
+RAW: 0.1764
+CCA: 0.1290, CCAAN: 0.1412
+VCA: 0.0682, VCAAN: 0.0581
+
+Number of sites: 12
+Type1 Rate2	 True missing rate of data: 0.3003
+mice: 0.1871,
+knn: 0.1389,
+locf: 0.2305,
+grud: 0.2010,
+usgan: 0.1674,
+saits: 0.1685,
+itransformer: 0.1680
+Type1 Rate2 MICE CONS:  50%|█████     | 5/10 [00:06<00:06,  1.33s/it]
+Type1 Rate2 MICE CONS-GAN:  80%|████████  | 4/5 [00:06<00:01,  1.73s/it]
+Type1 Rate2 MICE VARY:  40%|████      | 4/10 [00:05<00:08,  1.39s/it]
+Type1 Rate2 MICE VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.22s/it]
+Type1 Rate2 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1871
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0938, VCAAN: 0.0883
+
+Type1 Rate2 KNN CONS:  50%|█████     | 5/10 [00:07<00:07,  1.42s/it]
+Type1 Rate2 KNN CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.88s/it]
+Type1 Rate2 KNN VARY:  40%|████      | 4/10 [00:05<00:08,  1.48s/it]
+Type1 Rate2 KNN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.32s/it]
+RAW: 0.1389
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0938, VCAAN: 0.0883
+
+Type1 Rate2 LOCF CONS:  50%|█████     | 5/10 [00:06<00:06,  1.40s/it]
+Type1 Rate2 LOCF CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.84s/it]
+Type1 Rate2 LOCF VARY:  30%|███       | 3/10 [00:04<00:10,  1.56s/it]
+Type1 Rate2 LOCF VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.28s/it]
+Type1 Rate2 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2305
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0933, VCAAN: 0.0882
+
+Type1 Rate2 GRUD CONS:  50%|█████     | 5/10 [00:06<00:06,  1.36s/it]
+Type1 Rate2 GRUD CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.82s/it]
+Type1 Rate2 GRUD VARY:  40%|████      | 4/10 [00:05<00:08,  1.42s/it]
+Type1 Rate2 GRUD VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.24s/it]
+Type1 Rate2 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2010
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0938, VCAAN: 0.0883
+
+Type1 Rate2 USGAN CONS:  50%|█████     | 5/10 [00:06<00:06,  1.36s/it]
+Type1 Rate2 USGAN CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.76s/it]
+Type1 Rate2 USGAN VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type1 Rate2 USGAN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.11s/it]
+RAW: 0.1674
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0939, VCAAN: 0.0883
+
+Type1 Rate2 SAITS CONS:  50%|█████     | 5/10 [00:06<00:06,  1.30s/it]
+Type1 Rate2 SAITS CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.75s/it]
+Type1 Rate2 SAITS VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type1 Rate2 SAITS VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.12s/it]
+Type1 Rate2 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1685
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0939, VCAAN: 0.0883
+
+Type1 Rate2 iTransformer CONS:  40%|████      | 4/10 [00:05<00:08,  1.37s/it]
+Type1 Rate2 iTransformer CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.75s/it]
+Type1 Rate2 iTransformer VARY:  40%|████      | 4/10 [00:05<00:08,  1.37s/it]
+Type1 Rate2 iTransformer VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.14s/it]
+RAW: 0.1680
+CCA: 0.1439, CCAAN: 0.1427
+VCA: 0.0940, VCAAN: 0.0883
+
+Number of sites: 12
+Type1 Rate3	 True missing rate of data: 0.5007
+Type1 Rate3 MICE CONS:   0%|          | 0/10 [00:00<?, ?it/s]mice: 0.2273,
+knn: 0.3184,
+locf: 0.2797,
+grud: 0.2134,
+usgan: 0.1975,
+saits: 0.1995,
+itransformer: 0.1859
+Type1 Rate3 MICE CONS:  60%|██████    | 6/10 [00:04<00:02,  1.36it/s]
+Type1 Rate3 MICE CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.05it/s]
+Type1 Rate3 MICE VARY:  60%|██████    | 6/10 [00:04<00:03,  1.27it/s]
+Type1 Rate3 MICE VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.14s/it]
+Type1 Rate3 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2273
+CCA: 0.1825, CCAAN: 0.1710
+VCA: 0.1175, VCAAN: 0.1078
+
+Type1 Rate3 KNN CONS:  50%|█████     | 5/10 [00:04<00:04,  1.24it/s]
+Type1 Rate3 KNN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.14it/s]
+Type1 Rate3 KNN VARY:  40%|████      | 4/10 [00:03<00:05,  1.16it/s]
+Type1 Rate3 KNN VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.13s/it]
+Type1 Rate3 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.3184
+CCA: 0.1827, CCAAN: 0.1710
+VCA: 0.1178, VCAAN: 0.1078
+
+Type1 Rate3 LOCF CONS:  70%|███████   | 7/10 [00:05<00:02,  1.33it/s]
+Type1 Rate3 LOCF CONS-GAN: 100%|██████████| 5/5 [00:05<00:00,  1.01s/it]
+Type1 Rate3 LOCF VARY:  30%|███       | 3/10 [00:02<00:05,  1.25it/s]
+Type1 Rate3 LOCF VARY-GAN:  80%|████████  | 4/5 [00:05<00:01,  1.26s/it]
+Type1 Rate3 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2797
+CCA: 0.1826, CCAAN: 0.1710
+VCA: 0.1154, VCAAN: 0.1075
+
+Type1 Rate3 GRUD CONS:  60%|██████    | 6/10 [00:04<00:03,  1.26it/s]
+Type1 Rate3 GRUD CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.09it/s]
+Type1 Rate3 GRUD VARY:  40%|████      | 4/10 [00:03<00:05,  1.11it/s]
+Type1 Rate3 GRUD VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.19s/it]
+Type1 Rate3 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2134
+CCA: 0.1827, CCAAN: 0.1710
+VCA: 0.1175, VCAAN: 0.1078
+
+Type1 Rate3 USGAN CONS:  60%|██████    | 6/10 [00:04<00:03,  1.27it/s]
+Type1 Rate3 USGAN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.01it/s]
+Type1 Rate3 USGAN VARY:  60%|██████    | 6/10 [00:04<00:03,  1.30it/s]
+Type1 Rate3 USGAN VARY-GAN:  80%|████████  | 4/5 [00:05<00:01,  1.26s/it]
+Type1 Rate3 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1975
+CCA: 0.1826, CCAAN: 0.1710
+VCA: 0.1176, VCAAN: 0.1078
+
+Type1 Rate3 SAITS CONS:  60%|██████    | 6/10 [00:04<00:03,  1.27it/s]
+Type1 Rate3 SAITS CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.15it/s]
+Type1 Rate3 SAITS VARY:  40%|████      | 4/10 [00:03<00:05,  1.14it/s]
+Type1 Rate3 SAITS VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.14s/it]
+Type1 Rate3 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1995
+CCA: 0.1826, CCAAN: 0.1710
+VCA: 0.1173, VCAAN: 0.1078
+
+Type1 Rate3 iTransformer CONS:  60%|██████    | 6/10 [00:04<00:03,  1.30it/s]
+Type1 Rate3 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.00it/s]
+Type1 Rate3 iTransformer VARY:  60%|██████    | 6/10 [00:04<00:03,  1.32it/s]
+Type1 Rate3 iTransformer VARY-GAN:  80%|████████  | 4/5 [00:05<00:01,  1.27s/it]
+RAW: 0.1859
+CCA: 0.1825, CCAAN: 0.1710
+VCA: 0.1177, VCAAN: 0.1078
+
+Number of sites: 12
+Type2 Rate1	 True missing rate of data: 0.1022
+mice: 0.1319,
+knn: 0.2053,
+locf: 0.1160,
+grud: 0.1540,
+usgan: 0.1796,
+saits: 0.1774,
+itransformer: 0.2098
+Type2 Rate1 MICE CONS:  60%|██████    | 6/10 [00:10<00:06,  1.69s/it]
+Type2 Rate1 MICE CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.41s/it]
+Type2 Rate1 MICE VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type2 Rate1 MICE VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.69s/it]
+Type2 Rate1 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1319
+CCA: 0.1825, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Type2 Rate1 KNN CONS:  60%|██████    | 6/10 [00:10<00:06,  1.68s/it]
+Type2 Rate1 KNN CONS-GAN:  60%|██████    | 3/5 [00:06<00:04,  2.32s/it]
+Type2 Rate1 KNN VARY:  30%|███       | 3/10 [00:05<00:13,  1.98s/it]
+Type2 Rate1 KNN VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.83s/it]
+Type2 Rate1 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2053
+CCA: 0.1826, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Type2 Rate1 LOCF CONS:  50%|█████     | 5/10 [00:09<00:09,  1.83s/it]
+Type2 Rate1 LOCF CONS-GAN:  60%|██████    | 3/5 [00:07<00:05,  2.51s/it]
+Type2 Rate1 LOCF VARY:  30%|███       | 3/10 [00:06<00:14,  2.00s/it]
+Type2 Rate1 LOCF VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.80s/it]
+RAW: 0.1160
+CCA: 0.1825, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Type2 Rate1 GRUD CONS:  40%|████      | 4/10 [00:07<00:10,  1.82s/it]
+Type2 Rate1 GRUD CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.40s/it]
+Type2 Rate1 GRUD VARY:  30%|███       | 3/10 [00:05<00:13,  1.92s/it]
+Type2 Rate1 GRUD VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.73s/it]
+RAW: 0.1540
+CCA: 0.1824, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Type2 Rate1 USGAN CONS:  50%|█████     | 5/10 [00:08<00:08,  1.76s/it]
+Type2 Rate1 USGAN CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.42s/it]
+Type2 Rate1 USGAN VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type2 Rate1 USGAN VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.68s/it]
+Type2 Rate1 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1796
+CCA: 0.1824, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Type2 Rate1 SAITS CONS:  50%|█████     | 5/10 [00:08<00:08,  1.73s/it]
+Type2 Rate1 SAITS CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.37s/it]
+Type2 Rate1 SAITS VARY:  30%|███       | 3/10 [00:05<00:13,  1.93s/it]
+Type2 Rate1 SAITS VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.74s/it]
+Type2 Rate1 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1774
+CCA: 0.1824, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Type2 Rate1 iTransformer CONS:  50%|█████     | 5/10 [00:08<00:08,  1.73s/it]
+Type2 Rate1 iTransformer CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.38s/it]
+Type2 Rate1 iTransformer VARY:  30%|███       | 3/10 [00:05<00:13,  1.92s/it]
+Type2 Rate1 iTransformer VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.68s/it]
+RAW: 0.2098
+CCA: 0.1825, CCAAN: 0.1721
+VCA: 0.0975, VCAAN: 0.0917
+
+Number of sites: 12
+Type2 Rate2	 True missing rate of data: 0.3031
+mice: 0.3900,
+knn: 0.4592,
+locf: 0.2009,
+grud: 0.1774,
+usgan: 0.2182,
+saits: 0.2054,
+itransformer: 0.2038
+Type2 Rate2 MICE CONS:  70%|███████   | 7/10 [00:08<00:03,  1.26s/it]
+Type2 Rate2 MICE CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type2 Rate2 MICE VARY:  40%|████      | 4/10 [00:05<00:08,  1.39s/it]
+Type2 Rate2 MICE VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.13s/it]
+Type2 Rate2 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.3900
+CCA: 0.2500, CCAAN: 0.1725
+VCA: 0.1049, VCAAN: 0.0971
+
+Type2 Rate2 KNN CONS: 100%|██████████| 10/10 [00:10<00:00,  1.10s/it]
+Type2 Rate2 KNN CONS-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.80s/it]
+Type2 Rate2 KNN VARY:  40%|████      | 4/10 [00:05<00:08,  1.39s/it]
+Type2 Rate2 KNN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.07s/it]
+RAW: 0.4592
+CCA: 0.2458, CCAAN: 0.1725
+VCA: 0.1045, VCAAN: 0.0970
+
+Type2 Rate2 LOCF CONS:  60%|██████    | 6/10 [00:07<00:05,  1.29s/it]
+Type2 Rate2 LOCF CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.42s/it]
+Type2 Rate2 LOCF VARY:  30%|███       | 3/10 [00:04<00:10,  1.48s/it]
+Type2 Rate2 LOCF VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.13s/it]
+Type2 Rate2 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2009
+CCA: 0.2479, CCAAN: 0.1725
+VCA: 0.1052, VCAAN: 0.0971
+
+Type2 Rate2 GRUD CONS: 100%|██████████| 10/10 [00:10<00:00,  1.10s/it]
+Type2 Rate2 GRUD CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type2 Rate2 GRUD VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type2 Rate2 GRUD VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.21s/it]
+Type2 Rate2 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1774
+CCA: 0.2453, CCAAN: 0.1725
+VCA: 0.1049, VCAAN: 0.0971
+
+Type2 Rate2 USGAN CONS: 100%|██████████| 10/10 [00:10<00:00,  1.09s/it]
+Type2 Rate2 USGAN CONS-GAN: 100%|██████████| 5/5 [00:06<00:00,  1.40s/it]
+Type2 Rate2 USGAN VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type2 Rate2 USGAN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.13s/it]
+Type2 Rate2 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2182
+CCA: 0.2457, CCAAN: 0.1725
+VCA: 0.1048, VCAAN: 0.0970
+
+Type2 Rate2 SAITS CONS:  70%|███████   | 7/10 [00:08<00:03,  1.25s/it]
+Type2 Rate2 SAITS CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.41s/it]
+Type2 Rate2 SAITS VARY:  40%|████      | 4/10 [00:05<00:08,  1.37s/it]
+Type2 Rate2 SAITS VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.11s/it]
+Type2 Rate2 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2054
+CCA: 0.2497, CCAAN: 0.1725
+VCA: 0.1045, VCAAN: 0.0970
+
+Type2 Rate2 iTransformer CONS:  70%|███████   | 7/10 [00:08<00:03,  1.25s/it]
+Type2 Rate2 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type2 Rate2 iTransformer VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type2 Rate2 iTransformer VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.13s/it]
+RAW: 0.2038
+CCA: 0.2498, CCAAN: 0.1725
+VCA: 0.1047, VCAAN: 0.0970
+
+Number of sites: 12
+Type2 Rate3	 True missing rate of data: 0.5032
+Type2 Rate3 MICE CONS:   0%|          | 0/10 [00:00<?, ?it/s]mice: 0.6967,
+knn: 0.6986,
+locf: 0.3278,
+grud: 0.2499,
+usgan: 0.2305,
+saits: 0.2815,
+itransformer: 0.4378
+Type2 Rate3 MICE CONS: 100%|██████████| 10/10 [00:06<00:00,  1.49it/s]
+Type2 Rate3 MICE CONS-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.09s/it]
+Type2 Rate3 MICE VARY: 100%|██████████| 10/10 [00:06<00:00,  1.47it/s]
+Type2 Rate3 MICE VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.20s/it]
+RAW: 0.6967
+CCA: 0.2955, CCAAN: 0.1972
+VCA: 0.1344, VCAAN: 0.1268
+
+Type2 Rate3 KNN CONS: 100%|██████████| 10/10 [00:06<00:00,  1.53it/s]
+Type2 Rate3 KNN CONS-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.23s/it]
+Type2 Rate3 KNN VARY:  50%|█████     | 5/10 [00:04<00:04,  1.25it/s]
+Type2 Rate3 KNN VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.07it/s]
+Type2 Rate3 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.6986
+CCA: 0.3002, CCAAN: 0.1972
+VCA: 0.1367, VCAAN: 0.1266
+
+Type2 Rate3 LOCF CONS: 100%|██████████| 10/10 [00:06<00:00,  1.53it/s]
+Type2 Rate3 LOCF CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.01it/s]
+Type2 Rate3 LOCF VARY:  60%|██████    | 6/10 [00:04<00:03,  1.25it/s]
+Type2 Rate3 LOCF VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.12s/it]
+Type2 Rate3 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.3278
+CCA: 0.2877, CCAAN: 0.1973
+VCA: 0.1353, VCAAN: 0.1271
+
+Type2 Rate3 GRUD CONS: 100%|██████████| 10/10 [00:06<00:00,  1.49it/s]
+Type2 Rate3 GRUD CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.06it/s]
+Type2 Rate3 GRUD VARY:  40%|████      | 4/10 [00:03<00:05,  1.09it/s]
+Type2 Rate3 GRUD VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.10s/it]
+RAW: 0.2499
+CCA: 0.2829, CCAAN: 0.1973
+VCA: 0.1359, VCAAN: 0.1270
+
+Type2 Rate3 USGAN CONS: 100%|██████████| 10/10 [00:06<00:00,  1.50it/s]
+Type2 Rate3 USGAN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.05it/s]
+Type2 Rate3 USGAN VARY:  60%|██████    | 6/10 [00:04<00:03,  1.26it/s]
+Type2 Rate3 USGAN VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.14s/it]
+RAW: 0.2305
+CCA: 0.2869, CCAAN: 0.1973
+VCA: 0.1345, VCAAN: 0.1268
+
+Type2 Rate3 SAITS CONS: 100%|██████████| 10/10 [00:06<00:00,  1.49it/s]
+Type2 Rate3 SAITS CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.06it/s]
+Type2 Rate3 SAITS VARY:  60%|██████    | 6/10 [00:04<00:03,  1.27it/s]
+Type2 Rate3 SAITS VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.10s/it]
+Type2 Rate3 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2815
+CCA: 0.2895, CCAAN: 0.1972
+VCA: 0.1348, VCAAN: 0.1268
+
+Type2 Rate3 iTransformer CONS: 100%|██████████| 10/10 [00:06<00:00,  1.50it/s]
+Type2 Rate3 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.07it/s]
+Type2 Rate3 iTransformer VARY:  60%|██████    | 6/10 [00:04<00:03,  1.26it/s]
+Type2 Rate3 iTransformer VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.10s/it]
+RAW: 0.4378
+CCA: 0.2803, CCAAN: 0.1972
+VCA: 0.1365, VCAAN: 0.1270
+
+Number of sites: 12
+Type3 Rate1	 True missing rate of data: 0.1031
+mice: 0.3833,
+knn: 0.5924,
+locf: 0.7079,
+grud: 0.7182,
+usgan: 0.6568,
+saits: 0.5935,
+itransformer: 0.7242
+Type3 Rate1 MICE CONS:  90%|█████████ | 9/10 [00:13<00:01,  1.55s/it]
+Type3 Rate1 MICE CONS-GAN:  80%|████████  | 4/5 [00:08<00:02,  2.18s/it]
+Type3 Rate1 MICE VARY:  30%|███       | 3/10 [00:05<00:13,  1.88s/it]
+Type3 Rate1 MICE VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.68s/it]
+Type3 Rate1 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.3833
+CCA: 0.4478, CCAAN: 0.4931
+VCA: 0.4571, VCAAN: 0.4358
+
+Type3 Rate1 KNN CONS:  70%|███████   | 7/10 [00:11<00:04,  1.62s/it]
+Type3 Rate1 KNN CONS-GAN:  80%|████████  | 4/5 [00:08<00:02,  2.18s/it]
+Type3 Rate1 KNN VARY:  40%|████      | 4/10 [00:07<00:10,  1.77s/it]
+Type3 Rate1 KNN VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.62s/it]
+Type3 Rate1 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.5924
+CCA: 0.4463, CCAAN: 0.4931
+VCA: 0.4652, VCAAN: 0.4381
+
+Type3 Rate1 LOCF CONS:  60%|██████    | 6/10 [00:09<00:06,  1.64s/it]
+Type3 Rate1 LOCF CONS-GAN:  80%|████████  | 4/5 [00:08<00:02,  2.17s/it]
+Type3 Rate1 LOCF VARY:  20%|██        | 2/10 [00:04<00:17,  2.15s/it]
+Type3 Rate1 LOCF VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.65s/it]
+RAW: 0.7079
+CCA: 0.4450, CCAAN: 0.4931
+VCA: 0.4898, VCAAN: 0.4445
+
+Type3 Rate1 GRUD CONS:  70%|███████   | 7/10 [00:11<00:04,  1.62s/it]
+Type3 Rate1 GRUD CONS-GAN:  20%|██        | 1/5 [00:03<00:13,  3.49s/it]
+Type3 Rate1 GRUD VARY:  40%|████      | 4/10 [00:07<00:10,  1.78s/it]
+Type3 Rate1 GRUD VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.67s/it]
+RAW: 0.7182
+CCA: 0.4484, CCAAN: 0.4942
+VCA: 0.4686, VCAAN: 0.4391
+
+Type3 Rate1 USGAN CONS:  80%|████████  | 8/10 [00:12<00:03,  1.59s/it]
+Type3 Rate1 USGAN CONS-GAN:  80%|████████  | 4/5 [00:08<00:02,  2.18s/it]
+Type3 Rate1 USGAN VARY:  40%|████      | 4/10 [00:07<00:10,  1.80s/it]
+Type3 Rate1 USGAN VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.66s/it]
+Type3 Rate1 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.6568
+CCA: 0.4473, CCAAN: 0.4931
+VCA: 0.4663, VCAAN: 0.4383
+
+Type3 Rate1 SAITS CONS:  40%|████      | 4/10 [00:07<00:10,  1.77s/it]
+Type3 Rate1 SAITS CONS-GAN:  60%|██████    | 3/5 [00:06<00:04,  2.30s/it]
+Type3 Rate1 SAITS VARY:  40%|████      | 4/10 [00:07<00:10,  1.77s/it]
+Type3 Rate1 SAITS VARY-GAN:  40%|████      | 2/5 [00:05<00:07,  2.66s/it]
+Type3 Rate1 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.5935
+CCA: 0.4434, CCAAN: 0.4927
+VCA: 0.4659, VCAAN: 0.4385
+
+Type3 Rate1 iTransformer CONS:  40%|████      | 4/10 [00:07<00:10,  1.76s/it]
+Type3 Rate1 iTransformer CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.58s/it]
+Type3 Rate1 iTransformer VARY:  40%|████      | 4/10 [00:07<00:10,  1.77s/it]
+Type3 Rate1 iTransformer VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.73s/it]
+RAW: 0.7242
+CCA: 0.4446, CCAAN: 0.4925
+VCA: 0.4695, VCAAN: 0.4395
+
+Number of sites: 12
+Type3 Rate2	 True missing rate of data: 0.3030
+mice: 0.9423,
+knn: 0.9919,
+locf: 0.6715,
+grud: 0.8650,
+usgan: 0.8274,
+saits: 0.6302,
+itransformer: 0.8365
+Type3 Rate2 MICE CONS: 100%|██████████| 10/10 [00:10<00:00,  1.09s/it]
+Type3 Rate2 MICE CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.42s/it]
+Type3 Rate2 MICE VARY:  60%|██████    | 6/10 [00:07<00:05,  1.31s/it]
+Type3 Rate2 MICE VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.10s/it]
+Type3 Rate2 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.9423
+CCA: 0.4686, CCAAN: 0.4684
+VCA: 0.6003, VCAAN: 0.5281
+
+Type3 Rate2 KNN CONS:  40%|████      | 4/10 [00:05<00:08,  1.37s/it]
+Type3 Rate2 KNN CONS-GAN:  20%|██        | 1/5 [00:02<00:11,  2.83s/it]
+Type3 Rate2 KNN VARY:  60%|██████    | 6/10 [00:07<00:05,  1.28s/it]
+Type3 Rate2 KNN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.16s/it]
+RAW: 0.9919
+CCA: 0.5182, CCAAN: 0.5101
+VCA: 0.5586, VCAAN: 0.5027
+
+Type3 Rate2 LOCF CONS: 100%|██████████| 10/10 [00:10<00:00,  1.09s/it]
+Type3 Rate2 LOCF CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.40s/it]
+Type3 Rate2 LOCF VARY:  50%|█████     | 5/10 [00:06<00:06,  1.34s/it]
+Type3 Rate2 LOCF VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.08s/it]
+Type3 Rate2 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.6715
+CCA: 0.4609, CCAAN: 0.4671
+VCA: 0.5710, VCAAN: 0.5109
+
+Type3 Rate2 GRUD CONS: 100%|██████████| 10/10 [00:10<00:00,  1.10s/it]
+Type3 Rate2 GRUD CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type3 Rate2 GRUD VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type3 Rate2 GRUD VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.11s/it]
+RAW: 0.8650
+CCA: 0.4613, CCAAN: 0.4663
+VCA: 0.6129, VCAAN: 0.5361
+
+Type3 Rate2 USGAN CONS: 100%|██████████| 10/10 [00:10<00:00,  1.09s/it]
+Type3 Rate2 USGAN CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type3 Rate2 USGAN VARY:  60%|██████    | 6/10 [00:07<00:05,  1.30s/it]
+Type3 Rate2 USGAN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.23s/it]
+RAW: 0.8274
+CCA: 0.4673, CCAAN: 0.4668
+VCA: 0.5715, VCAAN: 0.5097
+
+Type3 Rate2 SAITS CONS:  60%|██████    | 6/10 [00:07<00:05,  1.27s/it]
+Type3 Rate2 SAITS CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.41s/it]
+Type3 Rate2 SAITS VARY:  40%|████      | 4/10 [00:05<00:08,  1.38s/it]
+Type3 Rate2 SAITS VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.19s/it]
+RAW: 0.6302
+CCA: 0.4631, CCAAN: 0.4683
+VCA: 0.5273, VCAAN: 0.4823
+
+Type3 Rate2 iTransformer CONS:  60%|██████    | 6/10 [00:07<00:05,  1.28s/it]
+Type3 Rate2 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.40s/it]
+Type3 Rate2 iTransformer VARY:  60%|██████    | 6/10 [00:07<00:05,  1.28s/it]
+Type3 Rate2 iTransformer VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.19s/it]
+RAW: 0.8365
+CCA: 0.4587, CCAAN: 0.4629
+VCA: 0.5839, VCAAN: 0.5202
+
+Number of sites: 12
+Type3 Rate3	 True missing rate of data: 0.5014
+mice: 1.3081,
+knn: 1.2152,
+locf: 0.8143,
+grud: 1.0460,
+usgan: 0.9499,
+saits: 0.8445,
+itransformer: 0.9668
+Type3 Rate3 MICE CONS: 100%|██████████| 10/10 [00:06<00:00,  1.56it/s]
+Type3 Rate3 MICE CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.02it/s]
+Type3 Rate3 MICE VARY:  40%|████      | 4/10 [00:03<00:04,  1.31it/s]
+Type3 Rate3 MICE VARY-GAN:  80%|████████  | 4/5 [00:04<00:01,  1.23s/it]
+RAW: 1.3081
+CCA: 1.5064, CCAAN: 0.8585
+VCA: 1.1300, VCAAN: 1.0600
+
+Type3 Rate3 KNN CONS: 100%|██████████| 10/10 [00:06<00:00,  1.56it/s]
+Type3 Rate3 KNN CONS-GAN: 100%|██████████| 5/5 [00:05<00:00,  1.01s/it]
+Type3 Rate3 KNN VARY:  40%|████      | 4/10 [00:02<00:04,  1.38it/s]
+Type3 Rate3 KNN VARY-GAN:  80%|████████  | 4/5 [00:05<00:01,  1.26s/it]
+RAW: 1.2152
+CCA: 1.5673, CCAAN: 0.8672
+VCA: 0.9777, VCAAN: 0.9123
+
+Type3 Rate3 LOCF CONS: 100%|██████████| 10/10 [00:06<00:00,  1.57it/s]
+Type3 Rate3 LOCF CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.10it/s]
+Type3 Rate3 LOCF VARY:  30%|███       | 3/10 [00:02<00:06,  1.09it/s]
+Type3 Rate3 LOCF VARY-GAN:  60%|██████    | 3/5 [00:03<00:02,  1.15s/it]
+RAW: 0.8143
+CCA: 1.4103, CCAAN: 0.8396
+VCA: 0.7816, VCAAN: 0.7603
+
+Type3 Rate3 GRUD CONS: 100%|██████████| 10/10 [00:06<00:00,  1.53it/s]
+Type3 Rate3 GRUD CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.05it/s]
+Type3 Rate3 GRUD VARY:  40%|████      | 4/10 [00:03<00:05,  1.18it/s]
+Type3 Rate3 GRUD VARY-GAN:  60%|██████    | 3/5 [00:03<00:02,  1.26s/it]
+Type3 Rate3 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 1.0460
+CCA: 1.4601, CCAAN: 0.8458
+VCA: 0.9714, VCAAN: 0.9228
+
+Type3 Rate3 USGAN CONS: 100%|██████████| 10/10 [00:06<00:00,  1.55it/s]
+Type3 Rate3 USGAN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.03it/s]
+Type3 Rate3 USGAN VARY:  40%|████      | 4/10 [00:03<00:04,  1.31it/s]
+Type3 Rate3 USGAN VARY-GAN:  60%|██████    | 3/5 [00:04<00:02,  1.38s/it]
+RAW: 0.9499
+CCA: 1.4675, CCAAN: 0.8537
+VCA: 0.9194, VCAAN: 0.8909
+
+Type3 Rate3 SAITS CONS: 100%|██████████| 10/10 [00:06<00:00,  1.57it/s]
+Type3 Rate3 SAITS CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.11it/s]
+Type3 Rate3 SAITS VARY:  40%|████      | 4/10 [00:03<00:05,  1.20it/s]
+Type3 Rate3 SAITS VARY-GAN:  40%|████      | 2/5 [00:02<00:03,  1.33s/it]
+RAW: 0.8445
+CCA: 1.4306, CCAAN: 0.8449
+VCA: 0.8695, VCAAN: 0.8566
+
+Type3 Rate3 iTransformer CONS:  80%|████████  | 8/10 [00:05<00:01,  1.37it/s]
+Type3 Rate3 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.01it/s]
+Type3 Rate3 iTransformer VARY:  40%|████      | 4/10 [00:03<00:04,  1.33it/s]
+Type3 Rate3 iTransformer VARY-GAN:  60%|██████    | 3/5 [00:04<00:02,  1.38s/it]
+RAW: 0.9668
+CCA: 1.4236, CCAAN: 0.8475
+VCA: 0.9204, VCAAN: 0.8985
+
+Number of sites: 12
+Type4 Rate1	 True missing rate of data: 0.1045
+Type4 Rate1 MICE CONS:   0%|          | 0/10 [00:00<?, ?it/s]mice: 0.1085,
+knn: 0.1304,
+locf: 0.2439,
+grud: 0.1258,
+usgan: 0.1506,
+saits: 0.1324,
+itransformer: 0.1455
+Type4 Rate1 MICE CONS:  40%|████      | 4/10 [00:07<00:10,  1.82s/it]
+Type4 Rate1 MICE CONS-GAN:  20%|██        | 1/5 [00:03<00:14,  3.55s/it]
+Type4 Rate1 MICE VARY:  30%|███       | 3/10 [00:05<00:13,  1.94s/it]
+Type4 Rate1 MICE VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.64s/it]
+Type4 Rate1 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1085
+CCA: 0.1448, CCAAN: 0.1306
+VCA: 0.1194, VCAAN: 0.1189
+
+Type4 Rate1 KNN CONS:  30%|███       | 3/10 [00:05<00:13,  1.90s/it]
+Type4 Rate1 KNN CONS-GAN:  80%|████████  | 4/5 [00:08<00:02,  2.24s/it]
+Type4 Rate1 KNN VARY:  20%|██        | 2/10 [00:04<00:17,  2.15s/it]
+Type4 Rate1 KNN VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.65s/it]
+RAW: 0.1304
+CCA: 0.1450, CCAAN: 0.1289
+VCA: 0.1245, VCAAN: 0.1208
+
+Type4 Rate1 LOCF CONS:  40%|████      | 4/10 [00:07<00:10,  1.80s/it]
+Type4 Rate1 LOCF CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.38s/it]
+Type4 Rate1 LOCF VARY:  20%|██        | 2/10 [00:04<00:17,  2.20s/it]
+Type4 Rate1 LOCF VARY-GAN: 100%|██████████| 5/5 [00:08<00:00,  1.80s/it]
+Type4 Rate1 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2439
+CCA: 0.1448, CCAAN: 0.1288
+VCA: 0.1230, VCAAN: 0.1201
+
+Type4 Rate1 GRUD CONS:  40%|████      | 4/10 [00:07<00:10,  1.79s/it]
+Type4 Rate1 GRUD CONS-GAN:  20%|██        | 1/5 [00:03<00:14,  3.53s/it]
+Type4 Rate1 GRUD VARY:  20%|██        | 2/10 [00:04<00:17,  2.20s/it]
+Type4 Rate1 GRUD VARY-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.36s/it]
+Type4 Rate1 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1258
+CCA: 0.1447, CCAAN: 0.1306
+VCA: 0.1195, VCAAN: 0.1196
+
+Type4 Rate1 USGAN CONS:  40%|████      | 4/10 [00:07<00:10,  1.82s/it]
+Type4 Rate1 USGAN CONS-GAN:  20%|██        | 1/5 [00:03<00:14,  3.59s/it]
+Type4 Rate1 USGAN VARY:  20%|██        | 2/10 [00:04<00:17,  2.17s/it]
+Type4 Rate1 USGAN VARY-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.43s/it]
+Type4 Rate1 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1506
+CCA: 0.1450, CCAAN: 0.1306
+VCA: 0.1273, VCAAN: 0.1208
+
+Type4 Rate1 SAITS CONS:  30%|███       | 3/10 [00:05<00:13,  1.92s/it]
+Type4 Rate1 SAITS CONS-GAN:  80%|████████  | 4/5 [00:09<00:02,  2.25s/it]
+Type4 Rate1 SAITS VARY:  20%|██        | 2/10 [00:04<00:17,  2.16s/it]
+Type4 Rate1 SAITS VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.74s/it]
+RAW: 0.1324
+CCA: 0.1446, CCAAN: 0.1289
+VCA: 0.1256, VCAAN: 0.1211
+
+Type4 Rate1 iTransformer CONS:  40%|████      | 4/10 [00:07<00:10,  1.81s/it]
+Type4 Rate1 iTransformer CONS-GAN:  20%|██        | 1/5 [00:03<00:14,  3.63s/it]
+Type4 Rate1 iTransformer VARY:  20%|██        | 2/10 [00:04<00:17,  2.20s/it]
+Type4 Rate1 iTransformer VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.57s/it]
+RAW: 0.1455
+CCA: 0.1446, CCAAN: 0.1306
+VCA: 0.1194, VCAAN: 0.1188
+
+Number of sites: 12
+Type4 Rate2	 True missing rate of data: 0.3027
+Type4 Rate2 MICE CONS:   0%|          | 0/10 [00:00<?, ?it/s]mice: 0.2840,
+knn: 0.2697,
+locf: 0.5043,
+grud: 0.2078,
+usgan: 0.1838,
+saits: 0.2044,
+itransformer: 0.2128
+Type4 Rate2 MICE CONS:  50%|█████     | 5/10 [00:06<00:06,  1.33s/it]
+Type4 Rate2 MICE CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+Type4 Rate2 MICE VARY:  50%|█████     | 5/10 [00:06<00:06,  1.34s/it]
+Type4 Rate2 MICE VARY-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+Type4 Rate2 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2840
+CCA: 0.1882, CCAAN: 0.1695
+VCA: 0.1631, VCAAN: 0.1719
+
+Type4 Rate2 KNN CONS:  80%|████████  | 8/10 [00:09<00:02,  1.25s/it]
+Type4 Rate2 KNN CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+Type4 Rate2 KNN VARY:  40%|████      | 4/10 [00:05<00:08,  1.39s/it]
+Type4 Rate2 KNN VARY-GAN:  80%|████████  | 4/5 [00:07<00:01,  1.88s/it]
+RAW: 0.2697
+CCA: 0.1918, CCAAN: 0.1698
+VCA: 0.1646, VCAAN: 0.1714
+
+Type4 Rate2 LOCF CONS:  60%|██████    | 6/10 [00:07<00:05,  1.27s/it]
+Type4 Rate2 LOCF CONS-GAN:  20%|██        | 1/5 [00:02<00:11,  2.88s/it]
+Type4 Rate2 LOCF VARY:  40%|████      | 4/10 [00:05<00:08,  1.41s/it]
+Type4 Rate2 LOCF VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.14s/it]
+Type4 Rate2 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.5043
+CCA: 0.1909, CCAAN: 0.1756
+VCA: 0.1705, VCAAN: 0.1711
+
+Type4 Rate2 GRUD CONS:  80%|████████  | 8/10 [00:09<00:02,  1.24s/it]
+Type4 Rate2 GRUD CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type4 Rate2 GRUD VARY:  40%|████      | 4/10 [00:05<00:08,  1.39s/it]
+Type4 Rate2 GRUD VARY-GAN:  60%|██████    | 3/5 [00:05<00:03,  1.98s/it]
+Type4 Rate2 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2078
+CCA: 0.1909, CCAAN: 0.1698
+VCA: 0.1644, VCAAN: 0.1699
+
+Type4 Rate2 USGAN CONS:  60%|██████    | 6/10 [00:07<00:05,  1.29s/it]
+Type4 Rate2 USGAN CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type4 Rate2 USGAN VARY:  40%|████      | 4/10 [00:05<00:08,  1.40s/it]
+Type4 Rate2 USGAN VARY-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+Type4 Rate2 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1838
+CCA: 0.1891, CCAAN: 0.1697
+VCA: 0.1642, VCAAN: 0.1719
+
+Type4 Rate2 SAITS CONS:  90%|█████████ | 9/10 [00:11<00:01,  1.23s/it]
+Type4 Rate2 SAITS CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+Type4 Rate2 SAITS VARY:  40%|████      | 4/10 [00:05<00:08,  1.39s/it]
+Type4 Rate2 SAITS VARY-GAN:  20%|██        | 1/5 [00:02<00:11,  2.91s/it]
+Type4 Rate2 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2044
+CCA: 0.1918, CCAAN: 0.1698
+VCA: 0.1637, VCAAN: 0.1659
+
+Type4 Rate2 iTransformer CONS:  70%|███████   | 7/10 [00:08<00:03,  1.26s/it]
+Type4 Rate2 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]
+Type4 Rate2 iTransformer VARY:  20%|██        | 2/10 [00:03<00:13,  1.64s/it]
+Type4 Rate2 iTransformer VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.17s/it]
+RAW: 0.2128
+CCA: 0.1916, CCAAN: 0.1698
+VCA: 0.1643, VCAAN: 0.1662
+
+Number of sites: 12
+Type4 Rate3	 True missing rate of data: 0.5022
+mice: 0.4324,
+knn: 0.5139,
+locf: 0.4878,
+grud: 0.2002,
+usgan: 0.1932,
+saits: 0.1995,
+itransformer: 0.2283
+Type4 Rate3 MICE CONS: 100%|██████████| 10/10 [00:06<00:00,  1.56it/s]
+Type4 Rate3 MICE CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.01it/s]
+Type4 Rate3 MICE VARY:  70%|███████   | 7/10 [00:05<00:02,  1.32it/s]
+Type4 Rate3 MICE VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.13it/s]
+RAW: 0.4324
+CCA: 0.2755, CCAAN: 0.1979
+VCA: 0.1951, VCAAN: 0.2008
+
+Type4 Rate3 KNN CONS:  50%|█████     | 5/10 [00:03<00:03,  1.27it/s]
+Type4 Rate3 KNN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.03it/s]
+Type4 Rate3 KNN VARY:  70%|███████   | 7/10 [00:05<00:02,  1.32it/s]
+Type4 Rate3 KNN VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.09it/s]
+Type4 Rate3 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.5139
+CCA: 0.2925, CCAAN: 0.1996
+VCA: 0.1913, VCAAN: 0.2075
+
+Type4 Rate3 LOCF CONS: 100%|██████████| 10/10 [00:06<00:00,  1.54it/s]
+Type4 Rate3 LOCF CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.02it/s]
+Type4 Rate3 LOCF VARY:  70%|███████   | 7/10 [00:05<00:02,  1.35it/s]
+Type4 Rate3 LOCF VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.02it/s]
+Type4 Rate3 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.4878
+CCA: 0.2664, CCAAN: 0.1949
+VCA: 0.1881, VCAAN: 0.2196
+
+Type4 Rate3 GRUD CONS: 100%|██████████| 10/10 [00:06<00:00,  1.53it/s]
+Type4 Rate3 GRUD CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.14it/s]
+Type4 Rate3 GRUD VARY:  40%|████      | 4/10 [00:03<00:05,  1.15it/s]
+Type4 Rate3 GRUD VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.08it/s]
+Type4 Rate3 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2002
+CCA: 0.2671, CCAAN: 0.1955
+VCA: 0.1764, VCAAN: 0.2091
+
+Type4 Rate3 USGAN CONS: 100%|██████████| 10/10 [00:06<00:00,  1.49it/s]
+Type4 Rate3 USGAN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.14it/s]
+Type4 Rate3 USGAN VARY:  40%|████      | 4/10 [00:03<00:05,  1.16it/s]
+Type4 Rate3 USGAN VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.07it/s]
+Type4 Rate3 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1932
+CCA: 0.2643, CCAAN: 0.1952
+VCA: 0.1790, VCAAN: 0.2114
+
+Type4 Rate3 SAITS CONS: 100%|██████████| 10/10 [00:06<00:00,  1.49it/s]
+Type4 Rate3 SAITS CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.13it/s]
+Type4 Rate3 SAITS VARY:  40%|████      | 4/10 [00:03<00:05,  1.15it/s]
+Type4 Rate3 SAITS VARY-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.08it/s]
+RAW: 0.1995
+CCA: 0.2629, CCAAN: 0.1950
+VCA: 0.1772, VCAAN: 0.2100
+
+Type4 Rate3 iTransformer CONS: 100%|██████████| 10/10 [00:06<00:00,  1.49it/s]
+Type4 Rate3 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.17it/s]
+Type4 Rate3 iTransformer VARY:  20%|██        | 2/10 [00:02<00:08,  1.10s/it]
+Type4 Rate3 iTransformer VARY-GAN:  40%|████      | 2/5 [00:02<00:04,  1.38s/it]
+RAW: 0.2283
+CCA: 0.2662, CCAAN: 0.1956
+VCA: 0.1706, VCAAN: 0.1845
+
+Number of sites: 12
+Type5 Rate1	 True missing rate of data: 0.1031
+mice: 0.0657,
+knn: 0.0476,
+locf: 0.0884,
+grud: 0.0739,
+usgan: 0.0977,
+saits: 0.0540,
+itransformer: 0.0558
+Type5 Rate1 MICE CONS:  50%|█████     | 5/10 [00:08<00:08,  1.74s/it]
+Type5 Rate1 MICE CONS-GAN:  60%|██████    | 3/5 [00:07<00:04,  2.41s/it]
+Type5 Rate1 MICE VARY:  20%|██        | 2/10 [00:04<00:17,  2.17s/it]
+Type5 Rate1 MICE VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.61s/it]
+Type5 Rate1 KNN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.0657
+CCA: 0.0568, CCAAN: 0.0529
+VCA: 0.0545, VCAAN: 0.0484
+
+Type5 Rate1 KNN CONS:  40%|████      | 4/10 [00:07<00:11,  1.84s/it]
+Type5 Rate1 KNN CONS-GAN:  40%|████      | 2/5 [00:05<00:07,  2.66s/it]
+Type5 Rate1 KNN VARY:  20%|██        | 2/10 [00:04<00:17,  2.22s/it]
+Type5 Rate1 KNN VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.63s/it]
+Type5 Rate1 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.0476
+CCA: 0.0580, CCAAN: 0.0526
+VCA: 0.0458, VCAAN: 0.0444
+
+Type5 Rate1 LOCF CONS:  50%|█████     | 5/10 [00:08<00:08,  1.74s/it]
+Type5 Rate1 LOCF CONS-GAN:  20%|██        | 1/5 [00:03<00:14,  3.67s/it]
+Type5 Rate1 LOCF VARY:  20%|██        | 2/10 [00:04<00:17,  2.18s/it]
+Type5 Rate1 LOCF VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.70s/it]
+RAW: 0.0884
+CCA: 0.0548, CCAAN: 0.0519
+VCA: 0.0513, VCAAN: 0.0458
+
+Type5 Rate1 GRUD CONS:  60%|██████    | 6/10 [00:10<00:06,  1.70s/it]
+Type5 Rate1 GRUD CONS-GAN:  40%|████      | 2/5 [00:05<00:08,  2.73s/it]
+Type5 Rate1 GRUD VARY:  20%|██        | 2/10 [00:04<00:17,  2.23s/it]
+Type5 Rate1 GRUD VARY-GAN:  20%|██        | 1/5 [00:03<00:13,  3.49s/it]
+RAW: 0.0739
+CCA: 0.0558, CCAAN: 0.0524
+VCA: 0.0524, VCAAN: 0.0466
+
+Type5 Rate1 USGAN CONS:  50%|█████     | 5/10 [00:08<00:08,  1.77s/it]
+Type5 Rate1 USGAN CONS-GAN:  20%|██        | 1/5 [00:03<00:13,  3.47s/it]
+Type5 Rate1 USGAN VARY:  10%|█         | 1/10 [00:02<00:26,  2.96s/it]
+Type5 Rate1 USGAN VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.58s/it]
+Type5 Rate1 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.0977
+CCA: 0.0574, CCAAN: 0.0521
+VCA: 0.0702, VCAAN: 0.0564
+
+Type5 Rate1 SAITS CONS:  40%|████      | 4/10 [00:07<00:10,  1.81s/it]
+Type5 Rate1 SAITS CONS-GAN:  40%|████      | 2/5 [00:05<00:08,  2.74s/it]
+Type5 Rate1 SAITS VARY:  20%|██        | 2/10 [00:04<00:17,  2.20s/it]
+Type5 Rate1 SAITS VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.64s/it]
+Type5 Rate1 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.0540
+CCA: 0.0562, CCAAN: 0.0525
+VCA: 0.0452, VCAAN: 0.0437
+
+Type5 Rate1 iTransformer CONS:  50%|█████     | 5/10 [00:08<00:08,  1.74s/it]
+Type5 Rate1 iTransformer CONS-GAN:  40%|████      | 2/5 [00:05<00:08,  2.74s/it]
+Type5 Rate1 iTransformer VARY:  20%|██        | 2/10 [00:04<00:17,  2.18s/it]
+Type5 Rate1 iTransformer VARY-GAN:  20%|██        | 1/5 [00:03<00:14,  3.60s/it]
+RAW: 0.0558
+CCA: 0.0578, CCAAN: 0.0524
+VCA: 0.0491, VCAAN: 0.0456
+
+Number of sites: 12
+Type5 Rate2	 True missing rate of data: 0.3042
+Type5 Rate2 MICE CONS:   0%|          | 0/10 [00:00<?, ?it/s]mice: 0.1916,
+knn: 0.2039,
+locf: 0.3704,
+grud: 0.2379,
+usgan: 0.1826,
+saits: 0.1774,
+itransformer: 0.2306
+Type5 Rate2 MICE CONS: 100%|██████████| 10/10 [00:11<00:00,  1.11s/it]
+Type5 Rate2 MICE CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]
+Type5 Rate2 MICE VARY:  20%|██        | 2/10 [00:03<00:13,  1.65s/it]
+Type5 Rate2 MICE VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.19s/it]
+RAW: 0.1916
+CCA: 0.2692, CCAAN: 0.1949
+VCA: 0.1652, VCAAN: 0.1574
+
+Type5 Rate2 KNN CONS:  80%|████████  | 8/10 [00:09<00:02,  1.25s/it]
+Type5 Rate2 KNN CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.46s/it]
+Type5 Rate2 KNN VARY:  50%|█████     | 5/10 [00:06<00:06,  1.34s/it]
+Type5 Rate2 KNN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.23s/it]
+RAW: 0.2039
+CCA: 0.2622, CCAAN: 0.1941
+VCA: 0.1684, VCAAN: 0.1586
+
+Type5 Rate2 LOCF CONS: 100%|██████████| 10/10 [00:11<00:00,  1.10s/it]
+Type5 Rate2 LOCF CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]
+Type5 Rate2 LOCF VARY:  40%|████      | 4/10 [00:05<00:08,  1.41s/it]
+Type5 Rate2 LOCF VARY-GAN:  40%|████      | 2/5 [00:04<00:07,  2.37s/it]
+Type5 Rate2 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.3704
+CCA: 0.2617, CCAAN: 0.1965
+VCA: 0.1693, VCAAN: 0.1612
+
+Type5 Rate2 GRUD CONS: 100%|██████████| 10/10 [00:11<00:00,  1.12s/it]
+Type5 Rate2 GRUD CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+Type5 Rate2 GRUD VARY:  30%|███       | 3/10 [00:04<00:10,  1.49s/it]
+Type5 Rate2 GRUD VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.25s/it]
+RAW: 0.2379
+CCA: 0.2652, CCAAN: 0.1957
+VCA: 0.1740, VCAAN: 0.1620
+
+Type5 Rate2 USGAN CONS: 100%|██████████| 10/10 [00:11<00:00,  1.11s/it]
+Type5 Rate2 USGAN CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.43s/it]
+Type5 Rate2 USGAN VARY:  30%|███       | 3/10 [00:04<00:10,  1.57s/it]
+Type5 Rate2 USGAN VARY-GAN:  40%|████      | 2/5 [00:06<00:09,  3.13s/it]
+Type5 Rate2 SAITS CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1826
+CCA: 0.2616, CCAAN: 0.1949
+VCA: 0.1691, VCAAN: 0.1591
+
+Type5 Rate2 SAITS CONS: 100%|██████████| 10/10 [00:16<00:00,  1.70s/it]
+Type5 Rate2 SAITS CONS-GAN: 100%|██████████| 5/5 [00:09<00:00,  1.97s/it]
+Type5 Rate2 SAITS VARY:  20%|██        | 2/10 [00:05<00:20,  2.54s/it]
+Type5 Rate2 SAITS VARY-GAN:  40%|████      | 2/5 [00:06<00:09,  3.14s/it]
+Type5 Rate2 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.1774
+CCA: 0.2726, CCAAN: 0.1949
+VCA: 0.1621, VCAAN: 0.1561
+
+Type5 Rate2 iTransformer CONS: 100%|██████████| 10/10 [00:15<00:00,  1.54s/it]
+Type5 Rate2 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:09<00:00,  1.95s/it]
+Type5 Rate2 iTransformer VARY:  10%|█         | 1/10 [00:03<00:29,  3.29s/it]
+Type5 Rate2 iTransformer VARY-GAN:  40%|████      | 2/5 [00:05<00:08,  2.86s/it]
+RAW: 0.2306
+CCA: 0.2712, CCAAN: 0.1954
+VCA: 0.1851, VCAAN: 0.1653
+
+Number of sites: 12
+Type5 Rate3	 True missing rate of data: 0.5045
+mice: 0.3063,
+knn: 0.3156,
+locf: 0.4456,
+grud: 0.2752,
+usgan: 0.2213,
+saits: 0.2132,
+itransformer: 0.2147
+Type5 Rate3 MICE CONS: 100%|██████████| 10/10 [00:09<00:00,  1.02it/s]
+Type5 Rate3 MICE CONS-GAN: 100%|██████████| 5/5 [00:07<00:00,  1.46s/it]
+Type5 Rate3 MICE VARY:  40%|████      | 4/10 [00:04<00:07,  1.18s/it]
+Type5 Rate3 MICE VARY-GAN:  40%|████      | 2/5 [00:03<00:05,  1.85s/it]
+RAW: 0.3063
+CCA: 0.3091, CCAAN: 0.2108
+VCA: 0.2115, VCAAN: 0.2014
+
+Type5 Rate3 KNN CONS:  90%|█████████ | 9/10 [00:09<00:01,  1.01s/it]
+Type5 Rate3 KNN CONS-GAN: 100%|██████████| 5/5 [00:06<00:00,  1.38s/it]
+Type5 Rate3 KNN VARY:  40%|████      | 4/10 [00:04<00:06,  1.13s/it]
+Type5 Rate3 KNN VARY-GAN:  40%|████      | 2/5 [00:04<00:06,  2.06s/it]
+Type5 Rate3 LOCF CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.3156
+CCA: 0.3039, CCAAN: 0.2103
+VCA: 0.2072, VCAAN: 0.2004
+
+Type5 Rate3 LOCF CONS: 100%|██████████| 10/10 [00:07<00:00,  1.43it/s]
+Type5 Rate3 LOCF CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.00it/s]
+Type5 Rate3 LOCF VARY:  10%|█         | 1/10 [00:01<00:09,  1.03s/it]
+Type5 Rate3 LOCF VARY-GAN:  40%|████      | 2/5 [00:02<00:04,  1.34s/it]
+Type5 Rate3 GRUD CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.4456
+CCA: 0.3060, CCAAN: 0.2130
+VCA: 0.2521, VCAAN: 0.2091
+
+Type5 Rate3 GRUD CONS: 100%|██████████| 10/10 [00:06<00:00,  1.51it/s]
+Type5 Rate3 GRUD CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.13it/s]
+Type5 Rate3 GRUD VARY:  40%|████      | 4/10 [00:03<00:05,  1.14it/s]
+Type5 Rate3 GRUD VARY-GAN:  40%|████      | 2/5 [00:02<00:03,  1.29s/it]
+Type5 Rate3 USGAN CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2752
+CCA: 0.2997, CCAAN: 0.2087
+VCA: 0.2026, VCAAN: 0.1959
+
+Type5 Rate3 USGAN CONS: 100%|██████████| 10/10 [00:06<00:00,  1.58it/s]
+Type5 Rate3 USGAN CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.05it/s]
+Type5 Rate3 USGAN VARY:  40%|████      | 4/10 [00:03<00:05,  1.17it/s]
+Type5 Rate3 USGAN VARY-GAN:  40%|████      | 2/5 [00:02<00:03,  1.32s/it]
+RAW: 0.2213
+CCA: 0.2947, CCAAN: 0.2078
+VCA: 0.2056, VCAAN: 0.1985
+
+Type5 Rate3 SAITS CONS:  90%|█████████ | 9/10 [00:06<00:00,  1.44it/s]
+Type5 Rate3 SAITS CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.03it/s]
+Type5 Rate3 SAITS VARY:  30%|███       | 3/10 [00:02<00:05,  1.26it/s]
+Type5 Rate3 SAITS VARY-GAN:  40%|████      | 2/5 [00:03<00:04,  1.57s/it]
+Type5 Rate3 iTransformer CONS:   0%|          | 0/10 [00:00<?, ?it/s]RAW: 0.2132
+CCA: 0.3027, CCAAN: 0.2109
+VCA: 0.1941, VCAAN: 0.1918
+
+Type5 Rate3 iTransformer CONS: 100%|██████████| 10/10 [00:06<00:00,  1.62it/s]
+Type5 Rate3 iTransformer CONS-GAN: 100%|██████████| 5/5 [00:04<00:00,  1.07it/s]
+Type5 Rate3 iTransformer VARY:  50%|█████     | 5/10 [00:03<00:03,  1.35it/s]
+Type5 Rate3 iTransformer VARY-GAN:  40%|████      | 2/5 [00:03<00:04,  1.62s/it]
+RAW: 0.2147
+CCA: 0.3082, CCAAN: 0.2115
+VCA: 0.1934, VCAAN: 0.1911
+
+Time: 00:51:54
+
+Process finished with exit code 0
