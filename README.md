@@ -1,7 +1,7 @@
 **README**
 # 1. Introduction
 This repository is used to reproduce experimental results from studies (Varying-Coefficient Autoregressive Adversarial Network). 
-The dataset is downloaded directly from the Python library [TSDB]([https://markdown.com.cn](https://github.com/WenjieDu/TSDB)). 
+The dataset is downloaded directly from the Python library [TSDB](https://github.com/WenjieDu/TSDB). 
 # 2. Repository Structure
 - res/                 # Experimental results
 
