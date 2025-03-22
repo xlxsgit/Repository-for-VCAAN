@@ -13,3 +13,5 @@ This repository is used to reproduce experimental results from studies (Varying-
 
 ├── running log.txt      # Run log for VCAAN.py
 
+# 3. License
+This code is licensed under [BSD-3-Clause]. It is intended for academic and research purposes only. 
