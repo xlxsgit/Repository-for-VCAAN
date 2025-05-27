@@ -50,7 +50,8 @@ def run_load_data():  # 加载数据
     Y = StandardScaler().fit_transform(Y) # standardize
 
     num_features = Y.shape[-1]  # The number of sites
-    print(f'Number of sites: {num_features}')
+    # print(f'missing rate of data: {np.isnan(Y).sum() / Y.size:.4f}')
+
     n_steps = 24  # The time step of one sample
     num_samples = Y.shape[0] // n_steps  # The number of samples
     Y = Y.reshape(num_samples, n_steps, num_features)  # Convert to the shape required by the library
@@ -63,11 +64,11 @@ def run_load_data():  # 加载数据
 # function: make missing
 def run_make_miss(Y, miss_type, miss_rate):  # miss_type: 1~5, miss_rate: 1~4
     set_my_seed()
-    dict_type_rate = {1: [0.105, 0.3, 0.5],
-                      2: [0.125, 0.48, 3.1],
-                      3: [1.42, 0.595, -0.16],
-                      4: [0.1, 0.3, 0.5],
-                      5: [0.0175, 0.0558, 0.11]}  # Parameters corresponding to the deletion rate of different deletion types
+    dict_type_rate = {1: [0.105,    0.3,    0.5,    0.7,    0.9],
+                      2: [0.125,    0.48,   3.1,    12.7,    50.5],
+                      3: [1.42,     0.595,  -0.16,  -0.62,   -1.17],
+                      4: [0.1,      0.3,    0.5,    0.86,    0.999],
+                      5: [0.0175,   0.0558, 0.11,   0.265,   0.75]}  # Parameters corresponding to the deletion rate of different deletion types
     target_rate = dict_type_rate[miss_type][miss_rate - 1]  # target missing rate
     Y = Y.to('cpu')
     if miss_type == 1:
@@ -563,7 +564,7 @@ initial_loss = 100 # initial loss (large enough)
 list_mse = []
 for miss_type in [1,2,3,4,5]:  # missing type
     list_mse_type = []
-    for miss_rate in [1,2,3]:  # missing rate
+    for miss_rate in [1,2,3,4,5]:  # missing rate
         list_mse_rate = []
         data, data_ori, num_features, n_steps, num_samples = run_load_data() # load data
         data = run_make_miss(data, miss_type, miss_rate) # make missing
